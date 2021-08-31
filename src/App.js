@@ -1,21 +1,22 @@
-import logo from './logo.svg';
+import Ein from './Ein.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <img src={Ein} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Hi! My name is Rick I'm a <code>Computer Systems Engineer</code>
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.linkedin.com/in/ricardoanaya/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Contact me
         </a>
       </header>
     </div>
