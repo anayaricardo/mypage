@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # My first page
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -17,7 +16,6 @@ You will also see any lint errors in the console.
 
 ## You will find the next links
 
-
 You can learn more about me in [LinkedIn](https://www.linkedin.com/in/ricardoanaya/).
 
 You can see my daily programming activities in [GitHub](https://github.com/anayaricardo).
@@ -31,8 +29,3 @@ Play with my Tic-tac-toc app [Tic-tac-toc](https://tic-tac-toc-react-game.netlif
 ## To learn
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-=======
-# mypage
-Mi pagina
->>>>>>> 5ad3d0b8e302618627b507759c6974e691bc5b2c
