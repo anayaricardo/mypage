@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # My first page
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -31,3 +32,7 @@ Play with my Tic-tac-toc app [Tic-tac-toc](https://tic-tac-toc-react-game.netlif
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
+=======
+# mypage
+Mi pagina
+>>>>>>> 5ad3d0b8e302618627b507759c6974e691bc5b2c
