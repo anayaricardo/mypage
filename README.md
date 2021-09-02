@@ -29,6 +29,3 @@ Play with my Tic-tac-toc app [Tic-tac-toc](https://tic-tac-toc-react-game.netlif
 ## To learn
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-# mypage
-Mi pagina
