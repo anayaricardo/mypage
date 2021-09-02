@@ -41,7 +41,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Tic-Tac-Toe
+          Tic-Tac-Toc
         </a>
       </header>
     </div>
