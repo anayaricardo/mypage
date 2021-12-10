@@ -43,6 +43,14 @@ function App() {
         >
           Tic-Tac-Toc
         </a>
+        <a
+          className="App-link"
+          href="https://creadordememesparamovil.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Creador de Memes
+        </a>
       </header>
     </div>
   );
