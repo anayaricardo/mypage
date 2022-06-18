@@ -1,4 +1,5 @@
-import Luz from './chip.png';
+// import chip from './chip.png';
+import computer from './computer.png'
 import './App.css';
 
 function App() {
@@ -7,10 +8,10 @@ function App() {
       <header className="App-header">
       <script src="https://cdn.sift.com/s.js"></script>
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <img src={Luz} className="App-logo" alt="logo" />
         <p>
-          Hi! My name is Rick and I'm a <code>Computer Systems Engineer</code>
+          Hi! My name is Ricardo Anaya and I'm a <code>Full Stack Developer</code>
         </p>
+        <img src={computer} className="App-logo" alt="logo" />
         <a
           className="App-link"
           href="https://www.linkedin.com/in/ricardoanaya/"
