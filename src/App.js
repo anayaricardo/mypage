@@ -38,6 +38,14 @@ function App() {
         </a>
         <a
           className="App-link"
+          href="https://anayaricardo.github.io/Planets/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Rotating Planets
+        </a>
+        <a
+          className="App-link"
           href="https://tic-tac-toc-react-game.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
@@ -47,8 +55,7 @@ function App() {
         <a
           className="App-link"
           href="https://creadordememesparamovil.netlify.app"
-          target="_blank"
-          rel="noopener noreferrer"
+          c
         >
           Creador de Memes
         </a>
