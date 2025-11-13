@@ -1,61 +1,38 @@
-# My page
+# Portafolio2026
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyecto creado con Vite (React, JavaScript).
 
-## Available Scripts
+Cómo levantar la app (Windows, cmd.exe):
 
-In the project directory, you can run:
+1. Instalar dependencias (si faltan):
 
-### `npm start`
+```bat
+npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. Ejecutar servidor de desarrollo:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bat
+npm run dev
+```
 
-## You will find the next links
+La app estará disponible en http://localhost:5173/ por defecto.
 
-You can learn more about me in [LinkedIn](https://www.linkedin.com/in/ricardoanaya/).
+Nota: El paquete en `package.json` se nombró `portafolio2026` para cumplir las reglas de nombres de npm (minúsculas).
 
-You can see my daily programming activities in [GitHub](https://github.com/anayaricardo).
+# React + Vite
 
-Follow me on [Twitter](https://twitter.com/ricky_anaya).
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Play with my Tic-tac-toc app [Tic-tac-toc](https://tic-tac-toc-react-game.netlify.app/).
+Currently, two official plugins are available:
 
-**Note: These links will take you to a `new page!`**
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## To learn
+## React Compiler
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-# Mi página
+## Expanding the ESLint configuration
 
-Este proyecto se creó con [Create React App](https://github.com/facebook/create-react-app).
-
-## Scripts Disponibles
-
-### `npm start`
-
-Ejecuta la aplicación en modo de desarrollo.\
-Abrirá [http://localhost:3000](http://localhost:3000) para verlo en el navegador.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-## You will find the next links
-
-You can learn more about me in [LinkedIn](https://www.linkedin.com/in/ricardoanaya/).
-
-You can see my daily programming activities in [GitHub](https://github.com/anayaricardo).
-
-Follow me on [Twitter](https://twitter.com/ricky_anaya).
-
-Play with my Tic-tac-toc app [Tic-tac-toc](https://tic-tac-toc-react-game.netlify.app/).
-
-**Note: These links will take you to a `new page!`**
-
-## To learn
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
