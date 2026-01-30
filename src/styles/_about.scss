@@ -1,0 +1,104 @@
+@use 'variables' as *;
+
+/* ===== ABOUT SECTION ===== */
+.about {
+  p {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+    color: $text-muted;
+    line-height: 1.8;
+  }
+
+  h3 {
+    font-size: $fs-5xl;
+    font-weight: $font-weight-bold;
+    margin: 2rem 0 1rem;
+    color: $accent;
+  }
+}
+
+/* ===== SKILLS GRID ===== */
+.skills {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 100%;
+
+  li {
+    padding: 0.8rem;
+    background: $bg-glass;
+    border: 1px solid $border;
+    border-radius: $border-radius-sm;
+    font-size: $fs-base;
+    font-weight: $font-weight-medium;
+    color: $text-primary;
+    word-break: break-word;
+    width: 100%;
+  }
+}
+
+/* ===== RESPONSIVE: TABLET ===== */
+@media (max-width: $breakpoint-tablet) {
+  .about {
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .skills {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.75rem;
+
+    li {
+      padding: 0.6rem;
+      font-size: $fs-lg;
+    }
+  }
+}
+
+/* ===== RESPONSIVE: MOBILE ===== */
+@media (max-width: $breakpoint-mobile) {
+  .about {
+    p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      margin: 1.5rem 0 0.75rem;
+    }
+  }
+
+  .skills {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 0.6rem;
+
+    li {
+      padding: 0.5rem 0.4rem;
+      font-size: $fs-sm;
+    }
+  }
+}
+
+/* ===== RESPONSIVE: iPhone Pro Max (430px) ===== */
+@media (max-width: $breakpoint-sm) {
+  .about {
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .skills {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 0.5rem;
+
+    li {
+      padding: 0.45rem 0.3rem;
+      font-size: 0.75rem;
+    }
+  }
+}

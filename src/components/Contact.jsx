@@ -4,9 +4,8 @@ export default function Contact() {
   return (
     <section id="contact" className="section contact">
       <h2>Contacto</h2>
-      <p>Ricardo Anaya Moreno — Santiago de Querétaro, México</p>
+      <p>Ricardo Anaya — Santiago de Querétaro, México</p>
       <ul className="contact-list">
-        <li>Tel: (442) 717 6905</li>
         <li>
           Email:{" "}
           <a href="mailto:ricardoanayamoreno@hotmail.com">

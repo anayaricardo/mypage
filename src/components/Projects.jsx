@@ -3,8 +3,8 @@ import p1 from "../assets/project1.svg";
 import p2 from "../assets/project2.svg";
 import p3 from "../assets/project3.svg";
 import p4 from "../assets/project4.svg";
-import p5 from "../assets/project5.svg";
-import p6 from "../assets/project6.svg";
+// import p5 from "../assets/project5.svg";
+// import p6 from "../assets/project6.svg";
 
 const projects = [
   {
@@ -35,20 +35,20 @@ const projects = [
     img: p4,
     url: "#",
   },
-  {
-    id: 5,
-    title: "Proyecto 5",
-    desc: "Descripción corta del proyecto 5",
-    img: p5,
-    url: "#",
-  },
-  {
-    id: 6,
-    title: "Proyecto 6",
-    desc: "Descripción corta del proyecto 6",
-    img: p6,
-    url: "#",
-  },
+  // {
+  //   id: 5,
+  //   title: "Proyecto 5",
+  //   desc: "Descripción corta del proyecto 5",
+  //   img: p5,
+  //   url: "#",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Proyecto 6",
+  //   desc: "Descripción corta del proyecto 6",
+  //   img: p6,
+  //   url: "#",
+  // },
 ];
 
 export default function Projects() {
@@ -57,15 +57,19 @@ export default function Projects() {
       <h2>Proyectos Destacados</h2>
 
       <div className="projects-grid">
-        {projects.map((p) => (
-          <article key={p.id} className="project-card">
+        {projects.map((p, index) => (
+          <article
+            key={p.id}
+            className="project-card"
+            style={{ "--item-index": index }}
+          >
             <div className="project-image">
               <img src={p.img} alt={p.title} />
             </div>
             <div className="project-body">
               <h3>{p.title}</h3>
               <p>{p.desc}</p>
-              <p className="project-links">
+              <div className="project-links">
                 <a
                   href={p.url}
                   target="_blank"
@@ -84,7 +88,7 @@ export default function Projects() {
                 >
                   Código / Más
                 </a>
-              </p>
+              </div>
             </div>
           </article>
         ))}

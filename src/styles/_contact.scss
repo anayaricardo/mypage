@@ -1,0 +1,68 @@
+@use 'variables' as *;
+
+/* ===== CONTACT SECTION ===== */
+.contact {
+  padding: 4rem 0;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  > p {
+    font-size: 1rem;
+    color: $text-muted;
+    margin-bottom: 2rem;
+    max-width: 600px;
+  }
+}
+
+/* ===== CONTACT LIST ===== */
+.contact-list {
+  list-style: none;
+  margin-bottom: 2rem;
+
+  li {
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+  }
+
+  a {
+    color: $accent;
+    font-weight: $font-weight-bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* ===== RESPONSIVE: TABLET ===== */
+@media (max-width: $breakpoint-tablet) {
+  .contact {
+    > p {
+      font-size: 0.95rem;
+    }
+  }
+}
+
+/* ===== RESPONSIVE: MOBILE ===== */
+@media (max-width: $breakpoint-mobile) {
+  .contact {
+    > p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .contact-list {
+    margin-bottom: 1.5rem;
+
+    li {
+      padding: 0.4rem 0;
+      font-size: 0.9rem;
+    }
+
+    a {
+      font-size: 0.9rem;
+    }
+  }
+}

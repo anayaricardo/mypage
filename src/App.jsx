@@ -1,15 +1,12 @@
 import React from "react";
-import "./App.css";
-import "./styles/components.css";
+import "./styles/App.scss";
+import { useScrollAnimation } from "./hooks/useScrollAnimation";
 
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import { Header, Hero, About, Projects, Contact, Footer } from "./components";
 
 export default function App() {
+  useScrollAnimation();
+
   return (
     <div id="root">
       <Header />

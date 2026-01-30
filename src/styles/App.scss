@@ -1,0 +1,23 @@
+/* ===== MAIN STYLESHEET (SCSS) ===== */
+/* Imports all partials in order */
+
+// Variables & colors (must be first)
+@use 'variables' as *;
+
+// Global styles & reset
+@use 'global';
+
+// Layout (header, main, footer)
+@use 'layout';
+
+// Components
+@use 'hero';
+@use 'about';
+@use 'projects';
+@use 'contact';
+
+// Animations
+@use 'animations';
+
+// External fonts (after all @use directives)
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');

@@ -1,0 +1,83 @@
+/* ===== COLOR PALETTE - DARK GRAY + ORANGE ===== */
+/* Dark Gray Base */
+$primary: #2E3440;        /* Main dark background */
+$secondary: #3B4252;      /* Secondary dark, containers */
+$tertiary: #434C5E;       /* Lighter dark, cards */
+$quaternary: #4C566A;     /* Lightest dark, borders */
+
+/* Orange Accents */
+$accent: #FF6B35;         /* Primary accent - warm orange */
+$accent-alt: #FF8C42;     /* Secondary accent - lighter orange */
+$accent-tertiary: #E55A1F; /* Tertiary accent - darker orange */
+$accent-frost: #FF7A4D;   /* Warm orange accent */
+
+/* Light Text (Snow) */
+$text-primary: #ECEFF4;   /* Primary text */
+$text-secondary: #E5E9F0; /* Secondary text */
+$text-muted: #D8DEE9;     /* Muted text */
+
+$bg-page: #2E3440;        /* Page background (Dark Gray) */
+$bg-glass: rgba(59, 66, 82, 0.7); /* Glass containers */
+$border: rgba(255, 107, 53, 0.15); /* Subtle orange border */
+
+/* Hover states */
+$accent-hover: #FF8C42;
+
+/* Shadow palette */
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+$shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+$shadow-text: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
+/* ===== TYPOGRAPHY ===== */
+$font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+/* Font sizes */
+$fs-xs: 0.75rem;
+$fs-sm: 0.8rem;
+$fs-base: 0.9rem;
+$fs-lg: 0.95rem;
+$fs-xl: 1rem;
+$fs-2xl: 1.05rem;
+$fs-3xl: 1.1rem;
+$fs-4xl: 1.15rem;
+$fs-5xl: 1.2rem;
+$fs-6xl: 1.3rem;
+$fs-7xl: 1.6rem;
+$fs-8xl: 2.2rem;
+$fs-9xl: 3.5rem;
+
+/* ===== SPACING ===== */
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-2xl: 2.5rem;
+$spacing-3xl: 3rem;
+$spacing-4xl: 4rem;
+
+/* ===== LAYOUT ===== */
+$max-width: 1200px;
+$header-padding-desktop: 2rem;
+$header-padding-tablet: 1.5rem;
+$header-padding-mobile: 1.2rem;
+
+/* ===== BORDER RADIUS ===== */
+$border-radius-sm: 6px;
+$border-radius-md: 8px;
+
+/* ===== TRANSITIONS ===== */
+$transition-speed: 0.3s;
+$transition-timing: ease;
+
+/* ===== BREAKPOINTS ===== */
+$breakpoint-desktop: 1200px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 480px;
+$breakpoint-sm: 430px;
+$breakpoint-xs: 360px;

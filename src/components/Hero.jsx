@@ -1,24 +1,23 @@
 import React from "react";
+import heroImage from "../assets/foto.png";
 
 export default function Hero() {
   return (
     <section id="hero" className="section hero">
-      <div className="hero-inner">
-        <h1>Ricardo Anaya Moreno</h1>
-        <p className="subtitle">
-          Frontend / Full Stack Developer · React · JavaScript
-        </p>
-        <p className="meta">Santiago de Querétaro, México</p>
-        <p className="cta">
-          <a href="#contact">Contáctame</a> ·{" "}
-          <a
-            href="https://anayaricardo.netlify.app"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Portafolio
-          </a>
-        </p>
+      <div className="hero-container">
+        <div className="hero-content">
+          <h1>Ricardo Anaya</h1>
+          <p className="subtitle">Full Stack Developer · React · JavaScript</p>
+          <p className="meta">Santiago de Querétaro, México</p>
+          <p className="cta">
+            <a href="#contact" className="cta-btn">
+              Contáctame
+            </a>
+          </p>
+        </div>
+        <div className="hero-image">
+          <img src={heroImage} alt="Ricardo Anaya" />
+        </div>
       </div>
     </section>
   );

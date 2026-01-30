@@ -1,0 +1,278 @@
+@use 'variables' as *;
+
+/* ===== PROJECTS SECTION ===== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.project-card {
+  background: $secondary;
+  border: 1px solid $border;
+  border-radius: $border-radius-md;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+
+  &:hover {
+    outline-color: $accent;
+    box-shadow: 0 6px 16px rgba($accent, 0.15);
+  }
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  background: $tertiary;
+  border-bottom: 1px solid $border;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform $transition-speed $transition-timing;
+  }
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-body {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h3 {
+    margin: 0 0 0.5rem;
+    color: $accent;
+    font-size: $fs-4xl;
+    font-weight: $font-weight-bold;
+  }
+
+  p {
+    margin: 0 0 1rem;
+    color: $text-muted;
+    font-size: $fs-base;
+    line-height: 1.5;
+    flex-grow: 1;
+  }
+}
+
+.project-links {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.btn,
+.muted {
+  text-decoration: none;
+  font-weight: $font-weight-bold;
+  border-radius: $border-radius-sm;
+  text-align: center;
+  flex: 1;
+  transition: all $transition-speed $transition-timing;
+  padding: 0.75rem 1.2rem;
+  font-size: $fs-base;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+}
+
+.btn {
+  background: $accent;
+  color: $primary;
+  border: 1px solid $accent;
+
+  &:hover {
+    background: $accent-alt;
+    border-color: $accent-alt;
+    color: $primary;
+  }
+}
+
+.muted {
+  color: $text-primary;
+  border: 1px solid $border;
+
+  &:hover {
+    color: $accent;
+    border-color: $accent;
+    background: rgba($accent, 0.1);
+  }
+}
+
+/* ===== RESPONSIVE: DESKTOP ===== */
+@media (min-width: 769px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+/* ===== RESPONSIVE: TABLET ===== */
+@media (max-width: $breakpoint-tablet) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-body {
+    h3 {
+      font-size: 1.05rem;
+    }
+
+    p {
+      font-size: $fs-lg;
+    }
+  }
+
+  .btn,
+  .muted {
+    padding: 0.55rem 1rem;
+    font-size: $fs-lg;
+  }
+}
+
+/* ===== RESPONSIVE: MOBILE (640px) ===== */
+@media (max-width: 640px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .project-body {
+    padding: 0.9rem;
+  }
+
+  .project-image {
+    height: 150px;
+  }
+}
+
+/* ===== RESPONSIVE: MOBILE ===== */
+@media (max-width: $breakpoint-mobile) {
+  .projects-grid {
+    gap: 1.25rem;
+  }
+
+  .project-image {
+    height: 150px;
+
+    img {
+      height: 150px;
+    }
+  }
+
+  .project-body {
+    padding: 1rem;
+
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    p {
+      font-size: $fs-sm;
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  .project-links {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .project-links a {
+    width: 100%;
+    padding: 0.5rem 0.8rem;
+    font-size: $fs-sm;
+  }
+
+  .btn,
+  .muted {
+    padding: 0.5rem 0.8rem;
+    font-size: $fs-sm;
+  }
+}
+
+/* ===== RESPONSIVE: EXTRA SMALL ===== */
+@media (max-width: $breakpoint-xs) {
+  .projects-grid {
+    gap: 1rem;
+  }
+
+  .project-card {
+    border-radius: $border-radius-sm;
+  }
+
+  .project-image {
+    height: 120px;
+  }
+
+  .project-body {
+    padding: 0.75rem;
+
+    h3 {
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .project-links {
+    gap: 0.25rem;
+  }
+
+  .project-links a {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* ===== RESPONSIVE: iPhone Pro Max (430px) ===== */
+@media (max-width: $breakpoint-sm) {
+  .project-image {
+    height: 140px;
+  }
+
+  .project-body {
+    padding: 0.9rem;
+
+    h3 {
+      font-size: 0.95rem;
+    }
+
+    p {
+      font-size: $fs-sm;
+    }
+  }
+
+  .project-links a {
+    padding: 0.45rem 0.8rem;
+    font-size: $fs-sm;
+  }
+}

@@ -1,0 +1,63 @@
+@use 'variables' as *;
+
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  font-family: $font-family;
+  background: $bg-page;
+  color: $text-primary;
+  line-height: 1.6;
+  font-size: $fs-base;
+  font-weight: $font-weight-normal;
+}
+
+/* ===== LINKS ===== */
+a {
+  color: $accent;
+  text-decoration: none;
+  transition: color $transition-speed $transition-timing;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+/* ===== MEDIA ELEMENTS ===== */
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== TEXT ELEMENTS ===== */
+p,
+li,
+span,
+a,
+button {
+  word-break: break-word;
+  hyphens: auto;
+}
+
+/* ===== HEADINGS ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-bold;
+  line-height: 1.2;
+}
