@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section id="contact" className="section contact">
       <h2>Contacto</h2>
-      <p>Ricardo Anaya — Santiago de Querétaro, México</p>
+      {/* <p>Ricardo Anaya — Santiago de Querétaro, México</p> */}
       <ul className="contact-list">
         <li>
           Email:{" "}
@@ -32,7 +32,7 @@ export default function Contact() {
             github.com/anayaricardo
           </a>
         </li>
-        <li>
+        {/* <li>
           Portafolio:{" "}
           <a
             href="https://anayaricardo.netlify.app"
@@ -41,7 +41,7 @@ export default function Contact() {
           >
             anayaricardo.netlify.app
           </a>
-        </li>
+        </li> */}
       </ul>
     </section>
   );

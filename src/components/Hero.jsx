@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="hero-content">
           <h1>Ricardo Anaya</h1>
           <p className="subtitle">Full Stack Developer · React · JavaScript</p>
-          <p className="meta">Santiago de Querétaro, México</p>
+          <p className="meta">Querétaro, México</p>
           <p className="cta">
             <a href="#contact" className="cta-btn">
               Contáctame

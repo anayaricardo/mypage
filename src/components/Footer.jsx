@@ -3,7 +3,10 @@ import React from "react";
 export default function Footer() {
   return (
     <footer>
-      <small>© {new Date().getFullYear()} Portafolio · Ricardo Anaya</small>
+      <small>
+        © {new Date().getFullYear()} Ricardo Anaya · Full Stack Developer ·
+        México
+      </small>
     </footer>
   );
 }

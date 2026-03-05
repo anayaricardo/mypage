@@ -1,39 +1,43 @@
 import React from "react";
-import p1 from "../assets/project1.svg";
-import p2 from "../assets/project2.svg";
-import p3 from "../assets/project3.svg";
-import p4 from "../assets/project4.svg";
+import p1 from "../assets/Github.png";
+import p2 from "../assets/Automata.png";
+import p3 from "../assets/Estados.png";
+import p4 from "../assets/Planets.png";
 // import p5 from "../assets/project5.svg";
 // import p6 from "../assets/project6.svg";
 
 const projects = [
   {
     id: 1,
-    title: "Portafolio (Live)",
-    desc: "Sitio personal con proyectos y contacto",
-    img: p1,
-    url: "https://anayaricardo.netlify.app",
-  },
-  {
-    id: 2,
-    title: "GitHub Repos",
+    title: "GitHub Repositorios",
     desc: "Repositorios públicos y código fuente",
-    img: p2,
+    img: p1,
     url: "https://github.com/anayaricardo",
-  },
-  {
-    id: 3,
-    title: "Tripper (Countries App)",
-    desc: "Full Stack SPA (React, Redux, Node, PostgreSQL)",
-    img: p3,
-    url: "#",
+    repoUrl: "https://github.com/anayaricardo/mypage",
   },
   {
     id: 4,
-    title: "Proyecto 4",
-    desc: "Descripción corta del proyecto 4",
+    title: "Planets",
+    desc: "Proyecto de animación de planetas (HTML, CSS)",
     img: p4,
-    url: "#",
+    url: "https://anayaricardo.github.io/Planets/",
+    repoUrl: "https://github.com/anayaricardo/Planets",
+  },
+  {
+    id: 2,
+    title: "Autómata Celular",
+    desc: "Proyecto matemático universitario (JavaScript, HTML, CSS)",
+    img: p2,
+    url: "https://anayaricardo.github.io/cellularAutomata/",
+    repoUrl: "https://github.com/anayaricardo/cellularAutomata",
+  },
+  {
+    id: 3,
+    title: "Proyecto de Estados con React",
+    desc: "Ejemplo de manejo de estados en React",
+    img: p3,
+    url: "https://anayaricardo.github.io/counterReact/",
+    repoUrl: "https://github.com/anayaricardo/counterReact",
   },
   // {
   //   id: 5,
@@ -79,9 +83,7 @@ export default function Projects() {
                   Ver
                 </a>
                 <a
-                  href={
-                    p.url === "#" ? "https://github.com/anayaricardo" : p.url
-                  }
+                  href={p.repoUrl}
                   target="_blank"
                   rel="noreferrer"
                   className="muted"

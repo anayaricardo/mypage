@@ -52,7 +52,7 @@ export default function Header() {
           <a href="#inicio" onClick={handleScrollToTop}>
             Inicio
           </a>{" "}
-          · <a href="#projects">Projectos</a> ·{" "}
+          · <a href="#projects">Proyectos</a> ·{" "}
           <a href="#about">Acerca de mí</a> · <a href="#contact">Contacto</a>
         </span>
 
