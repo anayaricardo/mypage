@@ -4,7 +4,7 @@ import p2 from "../assets/Automata.png";
 import p3 from "../assets/Estados.png";
 import p4 from "../assets/Planets.png";
 import p5 from "../assets/Gato.png";
-// import p6 from "../assets/project6.svg";
+import p6 from "../assets/Meme.png";
 
 const projects = [
   {
@@ -32,6 +32,14 @@ const projects = [
     repoUrl: "https://github.com/anayaricardo/Planets",
   },
   {
+    id: 6,
+    title: "MemeNow!",
+    desc: "Creador de memes con React",
+    img: p6,
+    url: "https://anayaricardo.github.io/memeMaker/",
+    repoUrl: "https://github.com/anayaricardo/memeMaker",
+  },
+  {
     id: 2,
     title: "Autómata Celular",
     desc: "Proyecto matemático universitario (JavaScript, HTML, CSS)",
@@ -47,13 +55,6 @@ const projects = [
     url: "https://anayaricardo.github.io/counterReact/",
     repoUrl: "https://github.com/anayaricardo/counterReact",
   },
-  // {
-  //   id: 6,
-  //   title: "Proyecto 6",
-  //   desc: "Descripción corta del proyecto 6",
-  //   img: p6,
-  //   url: "#",
-  // },
 ];
 
 export default function Projects() {
