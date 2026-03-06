@@ -92,6 +92,7 @@
       flex-direction: column;
       gap: 2rem;
       padding: 2.5rem;
+      backdrop-filter: none;
     }
 
     .hero-content {
@@ -131,6 +132,7 @@
       flex-direction: column;
       gap: 1.5rem;
       padding: 2rem;
+      backdrop-filter: none;
     }
 
     .hero-content {
@@ -167,6 +169,7 @@
       gap: 1.2rem;
       padding: 1.5rem;
       border-radius: 8px;
+      backdrop-filter: none;
     }
 
     .hero-content {
@@ -209,6 +212,7 @@
     .hero-container {
       gap: 1rem;
       padding: 1.2rem;
+      backdrop-filter: none;
     }
 
     .hero-content {

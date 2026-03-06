@@ -209,6 +209,12 @@ footer {
 @media (max-width: $breakpoint-tablet) {
   header {
     padding: 1rem $header-padding-tablet;
+    backdrop-filter: none;
+  }
+
+  .mobile-menu,
+  footer {
+    backdrop-filter: none;
   }
 
   header nav {
@@ -252,6 +258,11 @@ footer {
 @media (max-width: $breakpoint-mobile) {
   header {
     padding: 0.75rem $header-padding-mobile;
+    background: rgba(46, 52, 64, 0.98);
+  }
+
+  .mobile-menu {
+    background: rgba(92, 64, 51, 0.98);
   }
 
   header nav {

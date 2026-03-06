@@ -1,24 +1,33 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 export function useScrollAnimation() {
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        } else {
-          entry.target.classList.remove('visible');
-        }
-      });
-    }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -100px 0px'
-    });
+    const sections = document.querySelectorAll("section");
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
 
-    // Observar todas las secciones
-    document.querySelectorAll('section').forEach((section) => {
-      observer.observe(section);
-    });
+    if (prefersReducedMotion) {
+      sections.forEach((section) => section.classList.add("visible"));
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.12,
+        rootMargin: "0px 0px -10% 0px",
+      },
+    );
+
+    sections.forEach((section) => observer.observe(section));
 
     return () => observer.disconnect();
   }, []);
