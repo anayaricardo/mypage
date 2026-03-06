@@ -55,6 +55,14 @@ const projects = [
     url: "https://anayaricardo.github.io/counterReact/",
     repoUrl: "https://github.com/anayaricardo/counterReact",
   },
+  {
+    id: 7,
+    title: "SVG-g",
+    desc: "Ejemplo de manejo de SVG. Es una pieza de arte generativo minimalista hecha con SVG, donde un grupo de círculos superpuestos y un fondo degradado crean profundidad, ritmo visual y una composición abstracta responsive.",
+    img: p3,
+    url: "https://anayaricardo.github.io/SVG-g/",
+    repoUrl: "https://github.com/anayaricardo/SVG-g",
+  },
 ];
 
 export default function Projects() {
