@@ -3,21 +3,29 @@ import p1 from "../assets/Github.png";
 import p2 from "../assets/Automata.png";
 import p3 from "../assets/Estados.png";
 import p4 from "../assets/Planets.png";
-// import p5 from "../assets/project5.svg";
+import p5 from "../assets/Gato.png";
 // import p6 from "../assets/project6.svg";
 
 const projects = [
   {
     id: 1,
-    title: "GitHub Repositorios",
-    desc: "Repositorios públicos y código fuente",
+    title: "GitHub",
+    desc: "Repositorios públicos y código ",
     img: p1,
     url: "https://github.com/anayaricardo",
     repoUrl: "https://github.com/anayaricardo/mypage",
   },
   {
+    id: 5,
+    title: "Gato",
+    desc: "Proyecto de juego de gato con React",
+    img: p5,
+    url: "https://anayaricardo.github.io/tic-tac-toe/",
+    repoUrl: "https://github.com/anayaricardo/tic-tac-toe",
+  },
+  {
     id: 4,
-    title: "Planets",
+    title: "Planetas",
     desc: "Proyecto de animación de planetas (HTML, CSS)",
     img: p4,
     url: "https://anayaricardo.github.io/Planets/",
@@ -33,19 +41,12 @@ const projects = [
   },
   {
     id: 3,
-    title: "Proyecto de Estados con React",
+    title: "Contador",
     desc: "Ejemplo de manejo de estados en React",
     img: p3,
     url: "https://anayaricardo.github.io/counterReact/",
     repoUrl: "https://github.com/anayaricardo/counterReact",
   },
-  // {
-  //   id: 5,
-  //   title: "Proyecto 5",
-  //   desc: "Descripción corta del proyecto 5",
-  //   img: p5,
-  //   url: "#",
-  // },
   // {
   //   id: 6,
   //   title: "Proyecto 6",
