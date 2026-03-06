@@ -5,6 +5,8 @@ import p3 from "../assets/Estados.png";
 import p4 from "../assets/Planets.png";
 import p5 from "../assets/Gato.png";
 import p6 from "../assets/Meme.png";
+import p7 from "../assets/G.png";
+import p8 from "../assets/Paths.png";
 
 const projects = [
   {
@@ -14,6 +16,22 @@ const projects = [
     img: p1,
     url: "https://github.com/anayaricardo",
     repoUrl: "https://github.com/anayaricardo/mypage",
+  },
+  {
+    id: 7,
+    title: "SVG-g",
+    desc: "Ejemplo de manejo de SVG. Es una pieza de arte generativo minimalista hecha con SVG, donde un grupo de círculos superpuestos y un fondo degradado crean profundidad, ritmo visual y una composición abstracta responsive.",
+    img: p7,
+    url: "https://anayaricardo.github.io/SVG-g/",
+    repoUrl: "https://github.com/anayaricardo/SVG-g",
+  },
+  {
+    id: 8,
+    title: "SVG Paths",
+    desc: "Este proyecto es un pequeño lienzo digital: usa movimiento y forma (SVG + GSAP) para transformar líneas estáticas en una pieza visual con ritmo, intención y emoción.",
+    img: p8,
+    url: "https://anayaricardo.github.io/SVG-Paths/",
+    repoUrl: "https://github.com/anayaricardo/SVG-Paths",
   },
   {
     id: 5,
@@ -54,14 +72,6 @@ const projects = [
     img: p3,
     url: "https://anayaricardo.github.io/counterReact/",
     repoUrl: "https://github.com/anayaricardo/counterReact",
-  },
-  {
-    id: 7,
-    title: "SVG-g",
-    desc: "Ejemplo de manejo de SVG. Es una pieza de arte generativo minimalista hecha con SVG, donde un grupo de círculos superpuestos y un fondo degradado crean profundidad, ritmo visual y una composición abstracta responsive.",
-    img: p3,
-    url: "https://anayaricardo.github.io/SVG-g/",
-    repoUrl: "https://github.com/anayaricardo/SVG-g",
   },
 ];
 
